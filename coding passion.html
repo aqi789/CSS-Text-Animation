@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        h1 { 
+            color: rgb(255, 255, 255); 
+            margin: 0;
+            width: 250px; 
+            overflow: hidden;
+        } 
+        .container {
+            background-color: red;
+            padding: 7px;
+            margin-top: 25%;
+            
+        }
+        span::before {
+            content: "is passion";
+            padding-left: 10px;
+            animation: text 20s linear infinite alternate;
+        } 
+        @keyframes text {
+            0% {
+                content: "is passion";
+                opacity: 1;
+            }
+            10% {
+                content: "is passion";
+                opacity: 0;
+            }
+            20% {
+                content: "is struggle";
+                opacity: 1;
+            }
+            30% {
+                content: "is struggle";
+                opacity: 0;
+            }
+            40% {
+                content: "is journey";
+                opacity: 1;
+            }
+            50% {
+                content: "is journey";
+                opacity: 0;
+            }
+            60% {
+                content: "is lifestyle";
+                opacity: 1;
+            }
+            70% {
+                content: "is lifestyle";
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CODE<span></span></h1>
+    </div>
+</body>
+</html>
